@@ -27,7 +27,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: /project/techtrends/
+          context: nd064_course_1/project/techtrends/
           platforms: linux/amd64
           push: true
           tags: psysaar/techtrends:latest
