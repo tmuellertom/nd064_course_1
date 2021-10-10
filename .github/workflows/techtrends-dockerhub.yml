@@ -28,7 +28,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./project/techtrends/
-          file: Dockerfile
           platforms: linux/amd64
           push: true
           tags: psysaar/techtrends:latest
