@@ -35,8 +35,8 @@ spec:
           httpGet:
             path: {{ .Values.livenessProbe }}
             port: {{ .Values.containerPort }}
-	ports:
-	- name: http
-	  containerPort: {{ .Values.containerPort }}
-        resources:
+        ports:
+        - name: http
+          containerPort: {{ .Values.containerPort }}
+              resources:
 {{ toYaml .Values.resources | indent 12 }}
