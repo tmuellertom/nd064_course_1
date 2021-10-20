@@ -27,7 +27,7 @@ spec:
       - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: techtrends
-	      livenessProbe:
+        livenessProbe:
           httpGet:
             path: {{ .Values.livenessProbe }}
             port: {{ .Values.containerPort }}
