@@ -27,14 +27,14 @@ spec:
       - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: techtrends
-	livenessProbe:
-	  httpGet:
-	    path: {{ .Values.livenessProbe }}
-	    port: {{ .Values.containerPort }}
-	readinessProbe:
-	  httpGet:
-	    path: {{ .Values.livenessProbe }}
-	    port: {{ .Values.containerPort }}
+	      livenessProbe:
+          httpGet:
+            path: {{ .Values.livenessProbe }}
+            port: {{ .Values.containerPort }}
+        readinessProbe:
+          httpGet:
+            path: {{ .Values.livenessProbe }}
+            port: {{ .Values.containerPort }}
 	ports:
 	- name: http
 	  containerPort: {{ .Values.containerPort }}
