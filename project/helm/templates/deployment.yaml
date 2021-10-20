@@ -38,5 +38,5 @@ spec:
         ports:
         - name: http
           containerPort: {{ .Values.containerPort }}
-          resources:
-{{ toYaml .Values.resources | indent 12 }}
+        resources:
+{{ toYaml .Values.resources | indent 10 }}
