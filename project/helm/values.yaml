@@ -4,7 +4,7 @@ namespace:
 image:
   repository: techtrrends
   tag: latest
-  pullPolicy: IfNotPersent
+  pullPolicy: IfNotPresent
 
 replicaCount: 1
 
