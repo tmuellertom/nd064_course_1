@@ -20,8 +20,8 @@ spec:
   template:
     metadata:
       labels:
-        app: trechtrends
-        tag: trechtrends
+        app: techtrends
+        tag: techtrends
     spec:
       containers:
       - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
