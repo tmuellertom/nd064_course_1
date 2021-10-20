@@ -1,0 +1,9 @@
+apiVersion: v1
+name: techtrends 
+description: techtrends project
+keywords:
+- techtrends
+version: 1.0.0
+maintainers:
+- name: Thomas Mueller
+  email: mueller-thomas@vse.de
